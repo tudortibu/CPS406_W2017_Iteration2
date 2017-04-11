@@ -1,11 +1,16 @@
+
+
 body{
-    background-image: url(drupal.png);
+   
     background-repeat: repeat;;
     background-size: 100%;
+	overflow-y: scroll;
     width:100%;
     height:100%;
     padding: 0px;
     margin:0px;
+	position: absolute;
+	
 }
 .button{
 
@@ -17,6 +22,7 @@ body{
     font-family: 'Baloo Bhaina', cursive;
     font-size: 1.5em;
     text-align: center;
+	
 }
 a:visited,a:link,a:active{
     color:black;
@@ -35,6 +41,35 @@ a:visited,a:link,a:active{
     align-items: center;
     justify-content:center;
     z-index: 1;
+}
+.main{
+	
+	position:absolute;
+	font-family: 'Baloo Bhaina', cursive;
+    
+	left:50px;
+	top:600px;
+}
+
+pre{
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+#torontoLand{
+	position: center;
+	top:70px;
+	
+}
+#pic{
+	position:fixed;
+	right:70px;
+	top:50px;
+	
+}
+#bolded{
+	    font-family: 'Roboto Condensed', sans-serif;
+
 }
 img{
     display: block;
