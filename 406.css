@@ -53,20 +53,30 @@ a:visited,a:link,a:active{
 
 pre{
     font-family: 'Roboto Condensed', sans-serif;
-
-}
-
-#torontoLand{
-	position: center;
-	top:70px;
 	
 }
 #pic{
-	position:fixed;
-	right:70px;
-	top:50px;
+	position:absolute;
+	right:20px;
+	bottom:52px;
+	z-index: 2;
+}
+#torontoLand{
+	position: absolute;
+	top:65px;
+	
 	
 }
+
+#reportLink{
+	   font-family: 'Roboto Condensed', sans-serif;
+		text-align: left;
+		     width: 200px;
+   text-decoration: underline;
+
+        
+}
+
 #bolded{
 	    font-family: 'Roboto Condensed', sans-serif;
 
@@ -75,4 +85,17 @@ img{
     display: block;
     margin: 0 auto;
     margin-top:5%;
+}
+#block2 {
+    
+    margin: 10px 20px;
+    padding: 20px;
+    width: 180px;
+    float: right;
+	
+}
+.wrapper {
+    margin: auto;
+    width: 400px; /*The width you want it to be when centered*/
+    /* min-width works too */
 }
