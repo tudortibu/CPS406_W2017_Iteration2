@@ -156,7 +156,7 @@ tr:nth-child(even) {
           $myArray [] = $row;
             }
          }
-
+fclose($myfile);
          for($x = 0;  $x < count($myArray) ; $x++  ){
     
           $myArray[$x][1] = trim($myArray[$x][1] , '()');
@@ -179,7 +179,10 @@ tr:nth-child(even) {
         thing = new google.maps.LatLng(values[x]);
         addMarkerToMap(thing, values2[x].name, values2[x].content);
     }
-  };   
+  };  
+
+
+
     </script>
   </body>
 <?php 
@@ -189,6 +192,7 @@ tr:nth-child(even) {
         <th>Report Name</th>
         <th>Comment</th>
         <th>Status</th>
+        <th>DELETE</th>
       </tr>";
   $myArray = array();
     $myfile =   fopen("whatever.txt", "r")or die("Something went wrong");
@@ -204,12 +208,21 @@ tr:nth-child(even) {
       $var2 = (String) $myArray[$x][2];
       $var3 = (String) $myArray[$x][3];
       echo"<tr>
-            <td> $var1 </td>
+            <td>  $var1 </td>
             <td> $var2</td>
             <td>$var3</td>
+            <td><a href='page2.php?hello=true'>Delete</a></td>
           </tr>";
+          echo"</table>";
+          function runMyFunction() {
+   $myfile = fopen("whatever.txt", 'w+') or die("Something went wrong");
+  fclose($myfile);
+  }
 
+  if (isset($_GET['hello'])) {
+    runMyFunction();
+  }
 }
-echo"</table>";?>
+?>
 </body>
 </html>

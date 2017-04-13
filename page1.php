@@ -135,15 +135,15 @@ fclose($myfile);
         <td> <h1> Enter A Report </h1> </td>
       </tr>
       <tr>
-        <td> <input type="hidden" name="latlng" id ="latlng" value = ""> </td>
+        <td> <input type="hidden" required  name="latlng" id ="latlng" value = ""> </td>
       </tr>
       <tr>
         <td> <h3> Report Name: </h3> </td>
-        <td> <input id = "textboxBlock" type="text" name="reportName"> </td>
+        <td> <input id = "textboxBlock" required type="text" name="reportName"> </td>
       </tr>
       <tr>
         <td> <h3> Please Type Your Report: </h3> </td>
-        <td>  <textarea id="textbox" name="comment" rows="5" cols="40"></textarea> </td>
+        <td>  <textarea id="textbox" required name="comment" rows="5" cols="40"></textarea> </td>
       </tr>
       <tr>
         <td> </td>

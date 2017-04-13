@@ -156,9 +156,10 @@ pre{
 	z-index: 2;
 }
 #torontoLand{
-	position: absolute;
+	position: relative;
 	top:65px;
-	
+	width:100%;
+	height: auto;
 	
 }
 
