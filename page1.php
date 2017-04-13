@@ -32,7 +32,7 @@
           map: null
         });
       function initialize() {
-        var Toronto = { lat:43.6577, lng: -79.3788		 };
+        var Toronto = { lat:43.6577, lng: -79.3788     };
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 17,
           center: Toronto
@@ -69,10 +69,11 @@
   <body>
  <?php
 // define variables and set to empty values
-  $reportName = $latlng =  $comment = ;
+  $reportName = $latlng =  $comment = " ";
+  
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $reportName = test_input($_POST["name"]);
+  $reportName = test_input($_POST["reportName"]);
   $latlng = test_input($_POST["latlng"]);
   $comment = test_input($_POST["comment"]);
   
@@ -84,6 +85,13 @@ function test_input($data) {
   $data = htmlspecialchars($data);
   return $data;
 }
+$report = $arrayName = array($reportName, $latlng, $comment);
+$myfile = fopen("whatever.txt", 'a+') or die("Something went wrong");
+fwrite($myfile, "\r\n");
+fputcsv($myfile, $report);
+
+fclose($myfile);
+
 ?>
    <div class = "menu">
         <a href = "index.html"><div class = "button">
@@ -124,16 +132,17 @@ function test_input($data) {
   </div>
 <?php
 echo "<h2>Your Input:</h2>";
-echo $name;
+echo $reportName;
 echo "<br>";
-echo $email;
-echo "<br>";
-echo $website;
+echo $latlng;
 echo "<br>";
 echo $comment;
-echo "<br>";
-echo $gender;
+
 ?>
+
+
+
+
   </body>
 
 
