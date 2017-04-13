@@ -1,0 +1,74 @@
+<html>
+<head>
+	<link href ="406.css" type ="text/css" rel = "stylesheet" />
+	<title>Tell a Friend</title>
+<style>
+	input[type=text], select, textarea {
+	    width: 100%;
+	    padding: 10px;
+	    border: 1px solid #ccc;
+	    border-radius: 4px;
+	    box-sizing: border-box;
+	    margin-top: 6px;
+	    margin-bottom: 16px;
+	    resize: vertical;
+	}
+	.container {
+		border-radius: 5px;
+		background-color: #f2f2f2;
+		padding: 200px;
+		align: center;
+	}
+</style> 
+</head>
+<body>
+    <div class = "menu">
+    <a href = "index.html"><div class = "button">
+            Main
+        </div> </a>
+        <a href="intro.html"><div class = "button">
+            Reports
+        </div> </a>
+        <a href="install.html"><div class = "button">
+            Profile
+        </div> </a>
+        <a href="tutorial.html"><div class = "button">
+            FAQ
+        </div></a>
+        <div class = "button">
+            Contact Us
+        </div>
+        <a href="TellaFriend.html"><div class = "button">
+            Tell A Friend
+        </div></a>
+        <a href="credits.html"><div class = "button">
+            Vote
+        </div></a>
+    </div>
+    <br><br><br><br><br><br>
+	<div class="container" align="center">
+<label for="subject">Send a message to a friend!</label>
+<br>
+<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+Email: <input type="email" id="myEmail" placeholder="john@example.com">
+<br> <br>
+<button onclick="myFunction()"> Send email</button>
+<form action="406.html" method="post">
+	<br>
+<input type="submit" value="Back">
+</form>
+</div>
+<p id="demo"></p>
+
+<script>
+	function myFunction() {
+		if(document.getElementById("myEmail").value == '') {
+			alert('Please enter an email address')
+		}
+		else
+		alert("Email sent to " + document.getElementById("myEmail").value + "."); 
+	}
+</script>  
+</body>
+</html>
+
