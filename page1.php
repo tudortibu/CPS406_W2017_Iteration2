@@ -36,7 +36,7 @@
           map: null
         });
       function initialize() {
-        var Toronto = { lat:43.6577, lng: -79.3788     };
+        var Toronto = { lat:43.6577, lng: -79.3788		 };
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 17,
           center: Toronto
@@ -65,6 +65,7 @@
         console.log(document.getElementById("latlng").value);
       lastMarker.setMap(null);
       lastMarker = marker;
+
       }
 
       google.maps.event.addDomListener(window, 'load', initialize);
@@ -73,7 +74,7 @@
   <body>
  <?php
 // define variables and set to empty values
-  $reportName = $latlng =  $comment = " ";
+  $reportName = $latlng =  $comment = $status= "";
   
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -89,13 +90,15 @@ function test_input($data) {
   $data = htmlspecialchars($data);
   return $data;
 }
-$report = $arrayName = array($reportName, $latlng, $comment);
+if( $reportName !== "" || $latlng !== "" || $comment  !== "" ){
+$report = $arrayName = array($reportName, $latlng, $comment, "Sent");
 $myfile = fopen("whatever.txt", 'a+') or die("Something went wrong");
 fwrite($myfile, "\r\n");
+
 fputcsv($myfile, $report);
 
 fclose($myfile);
-
+}
 ?>
    <<div class = "menu">
         <a href = "406.html"><div class = "button">
