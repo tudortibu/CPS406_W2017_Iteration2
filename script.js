@@ -4,6 +4,8 @@ function modify_qty(val) {
     
     if (new_qty < 0) {
         new_qty = 0;
+		alert("sucessfully submitted");
+
     }
 	if (new_qty > 5){
 		new_qty = 5;
@@ -26,3 +28,6 @@ function modify_qty1(val1) {
     document.getElementById('qty1').value = new_qty;
     return new_qty;
 }
+function voter(){
+	alert("sucessfully submitted");
+	}
