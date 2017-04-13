@@ -100,23 +100,23 @@ fputcsv($myfile, $report);
 fclose($myfile);
 }
 ?>
-   <<div class = "menu">
+   <div class = "menu">
         <a href = "406.html"><div class = "button">
                 Main
             </div> </a>
             <a href="page1.php"><div class = "button">
                 Reports
             </div> </a>
-            <a href="profile.html"><div class = "button">
+            <a href="EditProfile.html"><div class = "button">
                 Profile
             </div> </a>
-            <a href="faq.html"><div class = "button">
+            <a href="FAQ.html"><div class = "button">
                 FAQ
             </div></a>
-            <a href="contact.html"><div class = "button">
+            <a href="contactUs.html"><div class = "button">
                 Contact Us
             </div></a>
-            <a href="friend.html"><div class = "button">
+            <a href="TellaFriend.html"><div class = "button">
                 Tell A Friend
             </div></a>
             <a href="vote.html"><div class = "button">
