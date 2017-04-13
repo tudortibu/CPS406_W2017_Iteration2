@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">    
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <title>Marker Labels</title>
+    <title>Submit a Report</title>
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -100,7 +100,7 @@ fputcsv($myfile, $report);
 fclose($myfile);
 }
 ?>
-   <div class = "menu">
+     <div class = "menu">
         <a href = "406.html"><div class = "button">
                 Main
             </div> </a>
@@ -122,43 +122,41 @@ fclose($myfile);
             <a href="vote.html"><div class = "button">
                 Vote
             </div></a>
-			
+            
         </div>
         
           
     <div id="map"></div>
 
-	
-  <div id = "inputArea" >
-    <h1>Enter A Report</h1>
-    
-   <form action= "<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>"  method="post" >
-    <input type="hidden" name="latlng" id ="latlng" value = "">
-	  <input id = "textboxBlock" type="text" name="reportName"> 
-    <pre>Report Name:
-
-
-
-
-	</pre>
+	<div id = "input area">
+  <form action= "<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>"  method="post" >
+    <table>
+      <tr>
+        <td> <h1> Enter A Report </h1> </td>
+      </tr>
+      <tr>
+        <td> <input type="hidden" name="latlng" id ="latlng" value = ""> </td>
+      </tr>
+      <tr>
+        <td> <h3> Report Name: </h3> </td>
+        <td> <input id = "textboxBlock" type="text" name="reportName"> </td>
+      </tr>
+      <tr>
+        <td> <h3> Please Type Your Report: </h3> </td>
+        <td>  <textarea id="textbox" name="comment" rows="5" cols="40"></textarea> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td>  <input type="submit" name="">  </td>
+      </tr>
+    </table>   
   
-      Please Type Your Report: <br>
-    <textarea id="textbox" name="comment" rows="5" cols="40"></textarea>
-    <input type="submit" name="">
-  </div>
-<?php
-echo "<h2>Your Input:</h2>";
-echo $reportName;
-echo "<br>";
-echo $latlng;
-echo "<br>";
-echo $comment;
+    </form>
+    </div>
 
-?>
-
-
-
-
+    <div class = "link-to-reports">
+      <a id = "button-report" href = "page2.php"> View Reports </a>
+    </div>
   </body>
 
 

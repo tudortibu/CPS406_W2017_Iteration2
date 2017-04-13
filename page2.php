@@ -5,7 +5,7 @@
    <link href ="406.css" type ="text/css" rel = "stylesheet" />
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <title>Marker Labels</title>
+    <title>Submitted Reports</title>
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -111,28 +111,29 @@ tr:nth-child(even) {
   </head>
   <body>
  
-   <div class = "menu">
-        <a href = "index.html"><div class = "button">
+     <div class = "menu">
+        <a href = "406.html"><div class = "button">
                 Main
             </div> </a>
-            <a href="intro.html"><div class = "button">
+            <a href="page1.php"><div class = "button">
                 Reports
             </div> </a>
-            <a href="install.html"><div class = "button">
+            <a href="EditProfile.html"><div class = "button">
                 Profile
             </div> </a>
             <a href="FAQ.html"><div class = "button">
                 FAQ
             </div></a>
-            <div class = "button">
+            <a href="contactUs.html"><div class = "button">
                 Contact Us
-            </div>
-            <a href="Friend.html"><div class = "button">
+            </div></a>
+            <a href="TellaFriend.html"><div class = "button">
                 Tell A Friend
             </div></a>
-            <a href="Vote.html"><div class = "button">
+            <a href="vote.html"><div class = "button">
                 Vote
             </div></a>
+            
         </div>
         <br>    
     <div id="map"></div>

@@ -18,30 +18,30 @@
         ?>
     </head>
     <body>
-        <div class = "menu">
-        <a href = "index.html"><div class = "button">
+      <div class = "menu">
+        <a href = "406.html"><div class = "button">
                 Main
             </div> </a>
-            <a href="intro.html"><div class = "button">
+            <a href="page1.php"><div class = "button">
                 Reports
             </div> </a>
-            <a href="Profile.html"><div class = "button">
+            <a href="EditProfile.html"><div class = "button">
                 Profile
             </div> </a>
-            <a href="tutorial.html"><div class = "button">
+            <a href="FAQ.html"><div class = "button">
                 FAQ
             </div></a>
-            <div class = "button">
+            <a href="contactUs.html"><div class = "button">
                 Contact Us
-            </div>
-            <a href="rating.html"><div class = "button">
+            </div></a>
+            <a href="TellaFriend.html"><div class = "button">
                 Tell A Friend
             </div></a>
-            <a href="credits.html"><div class = "button">
+            <a href="vote.html"><div class = "button">
                 Vote
             </div></a>
+            
         </div>
-
         <div class = "main-content">
             <div class = "profile">
                 <div id = "personal-info">
@@ -97,7 +97,7 @@
                         <td><a href = "EditProfile.html"> Edit Profile </a> </td>
                     </tr>
                     <tr>
-                        <td><a href = "page1.html"> View Reports </a> </td>
+                        <td><a href = "page1.php"> View Reports </a> </td>
                     </tr>
                 </table>
            </div>
